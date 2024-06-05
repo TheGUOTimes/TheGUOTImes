@@ -1,0 +1,251 @@
+html { width:100%; height:100%; margin:0px; }
+body { width:100%; height:100%; margin:0px; }
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+ul.home-page-summary {
+  color: white;
+  font-family: monospace;
+  font-size: 3.5vw;
+  list-style-type: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  user-select: none;
+  padding-left: 0px;
+}
+
+#home-page-summary-guo {
+  display: flex;
+  filter: blur(0px);
+  background-image: url(images_folder/starry_sky.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-color: rgba(20, 22, 41, .6);
+  background-blend-mode: color-dodge;
+  background-repeat: no-repeat;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+#home-page-summary-gua {
+  display: flex;
+  filter: blur(0px);
+  background-image: url(images_folder/starry_sky.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  background-color: rgba(20, 22, 41, .6);
+  background-blend-mode: color-dodge;
+  background-repeat: repeat;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  border-top: 2px solid black;
+}
+
+#guo-archive {
+  margin: 0px;
+}
+
+#main-page-guo-archive {
+  filter: blur(0px);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-top: 3px solid rgb(41, 38, 38);
+  height: fit-content;
+  margin-bottom: 5vw;
+}
+
+#main-page-gua-archive {
+  filter: blur(0px);
+  margin-left: 10%;
+  margin-right: 10%;
+  border-top: 3px solid rgb(41, 38, 38);
+  height: fit-content;
+  margin-bottom: 5vw;
+}
+
+#archive-headers-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: fit-content;
+}
+
+#archive-headers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding-inline-start: 0px;
+  margin-block-start: 1.5vw;
+  margin-block-end: 1.6vw;
+}
+
+li.archive-headers {
+  list-style: none;
+  display: inline;
+  font-family: sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2.1vw;
+  font-weight: 700;
+  padding-bottom: 1px;
+  border-bottom: 3px solid black;
+}
+
+#archive-content-container {
+  display: flex;
+  height: fit-content;
+}
+
+#archive-content-list {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 100%;
+}
+
+li.archive-content-list::marker {
+  font-family: sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+
+li.archive-content-list:hover {
+  transition: background-color 300ms;
+  background-color: rgba(242, 255, 57, 0.744);
+}
+
+li.archive-content-list:active {
+  transition: background-color 300ms;
+  background-color: rgba(242, 255, 57, 0.744);
+}
+
+#archive-content-titles {
+  display: flex;
+  flex: 1;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+div.archive-content-titles-container {
+  display: inline-flex;
+  width: 50%;
+  height: 100%;
+}
+
+ul.archive-content-titles {
+  padding-inline-start: 0;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  width: 100%;
+}
+
+li.archive-content-titles-list {
+  margin-bottom: .5vw;
+  margin-top: .5vw;
+  display: flex;
+  padding-left: 5%;
+}
+
+a.archive-content-titles {
+  font-family: sans-serif;
+  font-size: 1.4vw;
+  cursor: pointer;
+  color: rgb(71, 157, 255);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: opacity 100ms;
+}
+
+a.archive-content-titles:hover {
+  transition: color 100ms;
+  color: rgb(38, 127, 228);
+}
+
+a.archive-content-titles:active {
+  opacity: .8;
+}
+
+div.archive-content-authors-container {
+  display: inline-flex;
+  width: 47%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+ul.archive-content-authors {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-right: 10%;
+}
+
+li.archive-content-authors-list {
+  margin-bottom: .5vw;
+  margin-top: .5vw;
+  list-style-type: square;
+}
+
+a.archive-content-authors {
+  font-family: sans-serif;
+  font-size: 1.4vw;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  transition: opacity 100ms;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 970px) {
+  #home-page-summary {
+    background-attachment: fixed;
+    background-size: 175%;
+  }
+
+  #archive-content-list {
+    padding-inline-start: 10px;
+  }
+
+  ul.archive-content-authors {
+    padding-inline-start: 10px;
+  }
+
+  li.archive-headers {
+    font-size: 2.7vw;
+  }
+
+  li.archive-headers {
+    font-size: 2.7vw;
+  }
+
+  a.archive-content-titles {
+    font-size: 2.4vw;
+  }
+
+  li.archive-content-list::marker {
+    font-size: 2.4vw;
+  }
+
+  a.archive-content-authors {
+    font-size: 2.4vw;
+  }
+
+  li.archive-content-authors-list::marker {
+    font-size: 2.4vw;
+  }
+}

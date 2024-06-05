@@ -1,0 +1,133 @@
+html { width:100%; height:100%; margin:0px; }
+body { width:100%; height:100%; margin:0px; }
+
+html {
+    background-color: rgb(255, 255, 255);
+}
+
+ul.home-page-summary {
+  color: white;
+  font-family: monospace;
+  font-size: 3.5vw;
+  list-style-type: none;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  user-select: none;
+  padding-left: 0px;
+}
+
+#home-page-summary {
+  display: flex;
+  filter: blur(0px);
+  background-image: url(images_folder/starry_sky.jpg);
+  background-attachment: fixed;
+  background-color: rgba(20, 22, 41, .6);
+  background-blend-mode: color-dodge;
+  background-repeat: no-repeat;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  padding-left: 20%;
+  padding-right: 20%;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+#main-page {
+  filter: blur(0px);
+  margin-left: 5%;
+  margin-right: 5%;
+  border-top: 3px solid rgb(41, 38, 38);
+  height: fit-content;
+  min-height: 100%;
+}
+
+div.post-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  height: fit-content;
+}
+
+div.post {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  border-bottom: 3px solid black;
+}
+
+h1.post-header {
+  font-size: 34px;
+  font-weight: 800;
+  font-family: sans-serif;
+}
+
+img.post-content {
+  object-fit: contain;
+  max-width: 800px;
+  max-height: 34vw;
+}
+
+div.post-footer {
+  display: inline-flex;
+  font-family: sans-serif;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+p.post-author {
+  margin-right: auto;
+}
+
+div.post-share {
+  display: flex;
+}
+
+a.post-share {
+  font-family: sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  color: rgb(55, 138, 255);
+  margin-left: auto;
+  margin-top: 0px;
+}
+
+a.post-share:hover {
+  text-decoration: underline;
+}
+
+a.post-share:active {
+  transition: opacity 100ms;
+  opacity: .8;
+}
+
+@media screen and (max-width: 970px) {
+  #home-page-summary {
+    background-attachment: fixed;
+    background-size: 175%;
+  }
+
+  img.post-content {
+    max-width: 64vw;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  h1.post-header {
+    font-size: 5.1vw;
+  }
+
+  div.post-footer {
+    font-size: 3vw;
+  }
+
+  a.post-share {
+    font-size: 3vw;
+  }
+}

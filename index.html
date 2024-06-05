@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>The GUO Times</title>
+      <meta name="keywords" content="The GUO Times, John Guo, Guo, Guo Times, Gallery of Unique Opinions, unique opinions, 
+      diverse perspectives, digital journal, digital publication, blog, online blog, opinions blog, sharing opinions">
+      <meta name="description" content="Welcome to The GUO Times, The Gallery of Unique Opinions. 
+      We believe everyone has a unique voice worth hearing. You don't need to be an expert to share 
+      your opinions with us. We encourage writers from all walks of life to publish their thoughts 
+      and insights, creating a rich and inclusive community of unique voices.">
+      <link rel="stylesheet" href="index.css">
+      <link rel="stylesheet" href="navbar.css">
+      <link rel="icon" href="images_folder/guotimeslogo.jpg">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  </head>
+  <body>
+      <div id="navbar">
+        <ul class="navbar-tabs">
+          <li id="navbar-title">
+            <a id="logo-title" href="index.html">The GUO Times</a>
+          </li>
+          <li class="navbar-tabs">
+            <a id="publish" href="publish.html">Publish</a>
+          </li>
+          <li class="navbar-tabs">
+            <a id="archive" href="archive.html">Archive</a>
+          </li>
+          <li class="navbar-tabs">
+            <a id="GUA" href="GUA.html">GUA</a>
+          </li>
+          <li class="navbar-tabs">
+            <a id="about" href="about.html">About</a>
+          </li>
+        </ul>
+        <div class="navbar-menu-button-containter">
+          <div class="navbar-menu-button-bars-containter" onclick="toggleMenu(this)">
+            <div class="navbar-menu-button-bar1"></div>
+            <div class="navbar-menu-button-bar2"></div>
+            <div class="navbar-menu-button-bar3"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="mobile-nav" id="mobile-nav">
+        <ul class="mobile-navbar-tabs" id="mobile-navbar-tabs-list">
+          <li class="mobile-navbar-tabs">
+            <a id="publish" href="publish.html">Publish</a>
+          </li>
+          <li class="mobile-navbar-tabs">
+            <a id="archive" href="archive.html">Archive</a>
+          </li>
+          <li class="mobile-navbar-tabs">
+            <a id="GUA" href="GUA.html">GUA</a>
+          </li>
+          <li class="mobile-navbar-tabs">
+            <a id="about" href="about.html">About</a>
+          </li>
+          <li class="mobile-navbar-tabs" id="mobile-navbar-tabs-blank"></li>
+        </ul>
+      </div>
+
+      <div id="home-page-summary">
+        <ul class="home-page-summary">
+          <li>G - Gallery Of</li>
+          <li>U - Unique</li>
+          <li>O - Opinions</li>
+        </ul>
+      </div>
+      <div id="home-page-intro">
+        <p id="home-page-motto">"You don't have to be an expert to share your opinion" - John Guo</p>
+      </div>
+
+      <div id="main-page">
+
+        <div class="post-container">
+          <div class="post">
+            <h1 class="post-header" id="introduction">Introduction</h1>
+            <p class="post-content">
+              Welcome to The GUO Times! <br>
+              At The GUO Times, we believe that everyone deserves their own voice and unique opinion. GUO stands for 
+              Gallery of Unique Opinions, and we strive to embody that name in everything we do. Founded on the idea 
+              that you don’t need to be an expert to share your opinions, we are committed to providing a platform where 
+              each person has an equal opportunity to publish their work, whether through writing or art. <br>
+              The GUO Times provides everyone with a journal of writing and a gallery of artwork in our GUA (Gallery of 
+              Unique Art). Both are open to publishing by anyone who wishes to share their unique perspectives and 
+              creative expressions. <br>
+              Join us here at The GUO Times, where your voice matters and your work can have an equal opportunity to be 
+              seen. We hope you will stamp your name into history as you publish some of your best and unique work with 
+              us here at The GUO Times.
+            </p>
+          </div>
+          <div class="post-footer">
+            <p class="post-author">By: John Guo</p>
+            <p class="post-date">May 31, 2024</p>
+          </div>
+          <div class="post-share">
+            <a class="post-share" data-clipboard-text="#essay-for-internship1">Copy Link</a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="footer">
+        <div id="footer-copyright">
+          <a id="footer-logo-title" href="index.html">The GUO Times</a>
+          <p id="copyright-notice">© Copyright 2024, The GUO Times</p>
+        </div>
+        <div id="footer-links">
+          <ul class="footer-tabs">
+            <li class="footer-tabs">
+              <a id="footer-publish" href="publish.html">Publish</a>
+            </li>
+            <li class="footer-tabs">
+              <a id="footer-archive" href="archive.html">Archive</a>
+            </li>
+            <li class="footer-tabs">
+              <a id="footer-GUA" href="GUA.html">GUA</a>
+            </li>
+            <li class="footer-tabs">
+              <a id="footer-about" href="about.html">About</a>
+            </li>
+          </ul>
+        </div>
+        <div id="footer-back">
+          <a id="back-top" href="./">Back To Top</a>
+          <a id="footer-link-to-terms" href="/about.html#terms-and-conditions">Terms & Conditions</a>
+          <a id="footer-link-to-privacy" href="/about.html#privacy-policy">Privacy Policy</a>
+        </div>
+      </div>
+    
+      <script>
+        function toggleMenu(x) {
+        x.classList.toggle("animate");
+        }
+        var navbarMenuButton = document.getElementsByClassName("navbar-menu-button-bars-containter");
+        var x;
+        for (x = 0; x < navbarMenuButton.length; x++) {
+          navbarMenuButton[x].addEventListener("click", function() {
+            this.classList.toggle("active");
+            let menuCollapsible = document.getElementById("mobile-nav");
+            if (menuCollapsible.style.opacity === "1") {
+              menuCollapsible.style.transitionDuration=".3s";
+              menuCollapsible.style.opacity = 0;
+              document.getElementById("mobile-navbar-tabs-list").style.display = "none";
+              document.getElementById("navbar").style.position = "relative";
+              document.getElementById("home-page-summary").style.transitionDuration=".3s";
+              document.getElementById("home-page-summary").style.filter = "blur(0px)";
+              document.getElementById("home-page-intro").style.transitionDuration=".3s";
+              document.getElementById("home-page-intro").style.filter = "blur(0px)";
+              document.getElementById("main-page").style.transitionDuration=".3s";
+              document.getElementById("main-page").style.filter = "blur(0px)";
+            } else {
+              menuCollapsible.style.transitionDuration=".3s";
+              menuCollapsible.style.display = "inline";
+              document.getElementById("mobile-navbar-tabs-list").style.display = "block";
+              menuCollapsible.style.opacity = 1;
+              document.getElementById("navbar").style.position = "sticky";
+              document.getElementById("home-page-summary").style.transitionDuration=".3s";
+              document.getElementById("home-page-summary").style.filter = "blur(1px)";
+              document.getElementById("home-page-intro").style.transitionDuration=".3s";
+              document.getElementById("home-page-intro").style.filter = "blur(1px)";
+              document.getElementById("main-page").style.transitionDuration=".3s";
+              document.getElementById("main-page").style.filter = "blur(1px)";
+            }
+          });
+        }
+      </script>
+  </body>
+</html>
