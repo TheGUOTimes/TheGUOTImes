@@ -118,6 +118,19 @@ li.privacy-section-list-content {
   margin-bottom: 1vw;
 }
 
+a.contact-email {
+  color: rgb(71, 157, 255);
+}
+
+a.contact-email:hover {
+  transition: color 100ms;
+  color: rgb(38, 127, 228);
+}
+
+a.contact-email:active {
+  opacity: .8;
+}
+
 #privacy-parental-google-form {
   color: rgb(71, 157, 255);
 }

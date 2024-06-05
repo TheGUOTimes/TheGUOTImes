@@ -82,7 +82,7 @@
             <p class="post-date">May 31, 2024</p>
           </div>
           <div class="post-share">
-            <a class="post-share" data-clipboard-text="#starry-sky">Copy Link</a>
+            <a class="post-share" id="theguotimes.com/GUA#the-guo-times-logo" onclick="copyLink(event)">Copy Link</a>
           </div>
         </div>
 
@@ -151,6 +151,13 @@
               document.getElementById("footer").style.filter = "blur(1px)";
               document.getElementById("footer").style.pointerEvents = "none";
             }
+          });
+        }
+
+        function copyLink(evt) {
+          evt.preventDefault();
+          navigator.clipboard.writeText(evt.target.getAttribute('id')).then(() => {
+          }, () => {
           });
         }
       </script>
