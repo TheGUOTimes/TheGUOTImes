@@ -273,6 +273,7 @@ div.navbar-menu-button-containter {
 }
 
 div.footer {
+  filter: blur(0px);
   background-color: rgb(20, 22, 41);
   height: 10vw;
   padding-left: 3%;
@@ -495,6 +496,7 @@ li.footer-tabs {
   transition: opacity 100ms;
   user-select: none;
   padding: 3px;
+  margin-bottom: 1vw;
   border: 2px solid white;
 }
 
@@ -598,7 +600,7 @@ li.footer-tabs {
   }
 
   #publish {
-    font-size: 2.5vw;
+    font-size: 3.2vw;
   }
 
   #footer-publish {
@@ -606,7 +608,7 @@ li.footer-tabs {
   }
 
   #archive {
-    font-size: 2.5vw;
+    font-size: 3.2vw;
   }
 
   #footer-archive {
@@ -614,7 +616,7 @@ li.footer-tabs {
   }
 
   #GUA {
-    font-size: 2.5vw;
+    font-size: 3.2vw;
   }
 
   #footer-GUA {
@@ -622,7 +624,7 @@ li.footer-tabs {
   }
 
   #about {
-    font-size: 2.5vw;
+    font-size: 3.2vw;
   }
 
   #footer-about {
@@ -639,5 +641,13 @@ li.footer-tabs {
 
   #back-top {
     font-size: 1.9vw;
+  }
+
+  #footer-link-to-terms {
+    font-size: 2.3vw
+  }
+
+  #footer-link-to-privacy {
+    font-size: 2.3vw
   }
 }

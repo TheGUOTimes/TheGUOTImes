@@ -2,7 +2,7 @@ html { width:100%; height:100%; margin:0px; }
 body { width:100%; height:100%; margin:0px; }
 
 html {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 body {
@@ -132,11 +132,19 @@ a.post-share:active {
 @media screen and (max-width: 970px) {
   #home-page-summary {
     background-attachment: fixed;
-    background-size: 175%;
+    background-size: 200%;
   }
 }
 
 @media screen and (max-width: 670px) {
+  ul.home-page-summary {
+    font-size: 4.7vw;
+  }
+  
+  #home-page-motto {
+    font-size: 2.4vw;
+  }
+
   h1.post-header {
     font-size: 5.5vw;
   }

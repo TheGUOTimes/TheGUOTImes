@@ -103,71 +103,75 @@
       </div>
 
 
+    </div>
+    <div class="footer" id="footer">
+      <div id="footer-copyright">
+        <a id="footer-logo-title" href="./">The GUO Times</a>
+        <p id="copyright-notice">© Copyright 2024, The GUO Times</p>
       </div>
-      <div class="footer">
-        <div id="footer-copyright">
-          <a id="footer-logo-title" href="./">The GUO Times</a>
-          <p id="copyright-notice">© Copyright 2024, The GUO Times</p>
-        </div>
-        <div id="footer-links">
-          <ul class="footer-tabs">
-            <li class="footer-tabs">
-              <a id="footer-publish" href="./publish">Publish</a>
-            </li>
-            <li class="footer-tabs">
-              <a id="footer-archive" href="./archive">Archive</a>
-            </li>
-            <li class="footer-tabs">
-              <a id="footer-GUA" href="./GUA">GUA</a>
-            </li>
-            <li class="footer-tabs">
-              <a id="footer-about" href="./about">About</a>
-            </li>
-          </ul>
-        </div>
-        <div id="footer-back">
-          <a id="back-top" href="./GUA">Back To Top</a>
-          <a id="footer-link-to-terms" href="./about#terms-and-conditions">Terms & Conditions</a>
-          <a id="footer-link-to-privacy" href="./about#privacy-policy">Privacy Policy</a>
-        </div>
+      <div id="footer-links">
+        <ul class="footer-tabs">
+          <li class="footer-tabs">
+            <a id="footer-publish" href="./publish">Publish</a>
+          </li>
+          <li class="footer-tabs">
+            <a id="footer-archive" href="./archive">Archive</a>
+          </li>
+          <li class="footer-tabs">
+            <a id="footer-GUA" href="./GUA">GUA</a>
+          </li>
+          <li class="footer-tabs">
+            <a id="footer-about" href="./about">About</a>
+          </li>
+        </ul>
       </div>
+      <div id="footer-back">
+        <a id="back-top" href="./GUA">Back To Top</a>
+        <a id="footer-link-to-terms" href="./about#terms-and-conditions">Terms & Conditions</a>
+        <a id="footer-link-to-privacy" href="./about#privacy-policy">Privacy Policy</a>
+      </div>
+    </div>
     
-      <script>
-        function toggleMenu(x) {
-        x.classList.toggle("animate");
-        }
-        var navbarMenuButton = document.getElementsByClassName("navbar-menu-button-bars-containter");
-        var x;
-        for (x = 0; x < navbarMenuButton.length; x++) {
-          navbarMenuButton[x].addEventListener("click", function() {
-            this.classList.toggle("active");
-            let menuCollapsible = document.getElementById("mobile-nav");
-            if (menuCollapsible.style.opacity === "1") {
-              menuCollapsible.style.transitionDuration=".3s";
-              menuCollapsible.style.opacity = 0;
-              document.getElementById("mobile-navbar-tabs-list").style.display = "none";
-              document.getElementById("navbar").style.position = "relative";
-              document.getElementById("home-page-summary").style.transitionDuration=".3s";
-              document.getElementById("home-page-summary").style.filter = "blur(0px)";
-              document.getElementById("home-page-intro").style.transitionDuration=".3s";
-              document.getElementById("home-page-intro").style.filter = "blur(0px)";
-              document.getElementById("main-page").style.transitionDuration=".3s";
-              document.getElementById("main-page").style.filter = "blur(0px)";
-            } else {
-              menuCollapsible.style.transitionDuration=".3s";
-              menuCollapsible.style.display = "inline";
-              document.getElementById("mobile-navbar-tabs-list").style.display = "block";
-              menuCollapsible.style.opacity = 1;
-              document.getElementById("navbar").style.position = "sticky";
-              document.getElementById("home-page-summary").style.transitionDuration=".3s";
-              document.getElementById("home-page-summary").style.filter = "blur(1px)";
-              document.getElementById("home-page-intro").style.transitionDuration=".3s";
-              document.getElementById("home-page-intro").style.filter = "blur(1px)";
-              document.getElementById("main-page").style.transitionDuration=".3s";
-              document.getElementById("main-page").style.filter = "blur(1px)";
-            }
-          });
-        }
-      </script>
+    <script>
+      function toggleMenu(x) {
+      x.classList.toggle("animate");
+      }
+      var navbarMenuButton = document.getElementsByClassName("navbar-menu-button-bars-containter");
+      var x;
+      for (x = 0; x < navbarMenuButton.length; x++) {
+        navbarMenuButton[x].addEventListener("click", function() {
+          this.classList.toggle("active");
+          let menuCollapsible = document.getElementById("mobile-nav");
+          if (menuCollapsible.style.opacity === "1") {
+            menuCollapsible.style.transitionDuration=".3s";
+            menuCollapsible.style.opacity = 0;
+            document.getElementById("mobile-navbar-tabs-list").style.display = "none";
+            document.getElementById("navbar").style.position = "relative";
+            document.getElementById("home-page-summary").style.transitionDuration=".3s";
+            document.getElementById("home-page-summary").style.filter = "blur(0px)";
+            document.getElementById("home-page-intro").style.transitionDuration=".3s";
+            document.getElementById("home-page-intro").style.filter = "blur(0px)";
+            document.getElementById("main-page").style.transitionDuration=".3s";
+            document.getElementById("main-page").style.filter = "blur(0px)";
+            document.getElementById("footer").style.transitionDuration=".3s";
+            document.getElementById("footer").style.filter = "blur(0px)";
+          } else {
+            menuCollapsible.style.transitionDuration=".3s";
+            menuCollapsible.style.display = "inline";
+            document.getElementById("mobile-navbar-tabs-list").style.display = "block";
+            menuCollapsible.style.opacity = 1;
+            document.getElementById("navbar").style.position = "sticky";
+            document.getElementById("home-page-summary").style.transitionDuration=".3s";
+            document.getElementById("home-page-summary").style.filter = "blur(1px)";
+            document.getElementById("home-page-intro").style.transitionDuration=".3s";
+            document.getElementById("home-page-intro").style.filter = "blur(1px)";
+            document.getElementById("main-page").style.transitionDuration=".3s";
+            document.getElementById("main-page").style.filter = "blur(1px)";
+            document.getElementById("footer").style.transitionDuration=".3s";
+            document.getElementById("footer").style.filter = "blur(1px)";
+          }
+        });
+      }
+    </script>
   </body>
 </html>

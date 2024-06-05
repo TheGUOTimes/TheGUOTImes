@@ -136,7 +136,7 @@
         </div>
       </div>
 
-      <div class="footer">
+      <div class="footer" id="footer">
         <div id="footer-copyright">
           <a id="footer-logo-title" href="./">The GUO Times</a>
           <p id="copyright-notice">© Copyright 2024, The GUO Times</p>
@@ -179,24 +179,32 @@
               menuCollapsible.style.opacity = 0;
               document.getElementById("mobile-navbar-tabs-list").style.display = "none";
               document.getElementById("navbar").style.position = "relative";
-              document.getElementById("home-page-summary").style.transitionDuration=".3s";
-              document.getElementById("home-page-summary").style.filter = "blur(0px)";
+              document.getElementById("home-page-summary-guo").style.transitionDuration=".3s";
+              document.getElementById("home-page-summary-guo").style.filter = "blur(0px)";
+              document.getElementById("home-page-summary-gua").style.transitionDuration=".3s";
+              document.getElementById("home-page-summary-gua").style.filter = "blur(0px)";
               document.getElementById("home-page-intro").style.transitionDuration=".3s";
               document.getElementById("home-page-intro").style.filter = "blur(0px)";
               document.getElementById("main-page").style.transitionDuration=".3s";
               document.getElementById("main-page").style.filter = "blur(0px)";
+              document.getElementById("footer").style.transitionDuration=".3s";
+              document.getElementById("footer").style.filter = "blur(0px)";
             } else {
               menuCollapsible.style.transitionDuration=".3s";
               menuCollapsible.style.display = "inline";
               document.getElementById("mobile-navbar-tabs-list").style.display = "block";
               menuCollapsible.style.opacity = 1;
               document.getElementById("navbar").style.position = "sticky";
-              document.getElementById("home-page-summary").style.transitionDuration=".3s";
-              document.getElementById("home-page-summary").style.filter = "blur(1px)";
+              document.getElementById("home-page-summary-guo").style.transitionDuration=".3s";
+              document.getElementById("home-page-summary-guo").style.filter = "blur(1px)";
+              document.getElementById("home-page-summary-gua").style.transitionDuration=".3s";
+              document.getElementById("home-page-summary-gua").style.filter = "blur(1px)";
               document.getElementById("home-page-intro").style.transitionDuration=".3s";
               document.getElementById("home-page-intro").style.filter = "blur(1px)";
               document.getElementById("main-page").style.transitionDuration=".3s";
               document.getElementById("main-page").style.filter = "blur(1px)";
+              document.getElementById("footer").style.transitionDuration=".3s";
+              document.getElementById("footer").style.filter = "blur(1px)";
             }
           });
         }
