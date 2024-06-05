@@ -155,6 +155,7 @@
             document.getElementById("main-page").style.filter = "blur(0px)";
             document.getElementById("footer").style.transitionDuration=".3s";
             document.getElementById("footer").style.filter = "blur(0px)";
+            document.getElementById("footer").style.pointerEvents = "auto";
           } else {
             menuCollapsible.style.transitionDuration=".3s";
             menuCollapsible.style.display = "inline";
@@ -169,6 +170,7 @@
             document.getElementById("main-page").style.filter = "blur(1px)";
             document.getElementById("footer").style.transitionDuration=".3s";
             document.getElementById("footer").style.filter = "blur(1px)";
+            document.getElementById("footer").style.pointerEvents = "none";
           }
         });
       }
