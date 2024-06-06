@@ -25,6 +25,7 @@ ul.home-page-summary {
   filter: blur(0px);
   background-image: url(images_folder/starry_sky.jpg);
   background-attachment: fixed;
+  background-size: cover;
   background-position: top;
   background-color: rgba(20, 22, 41, .6);
   background-blend-mode: color-dodge;
@@ -44,6 +45,7 @@ ul.home-page-summary {
   filter: blur(0px);
   background-image: url(images_folder/starry_sky.jpg);
   background-attachment: fixed;
+  background-size: cover;
   background-position: center;
   background-color: rgba(20, 22, 41, .6);
   background-blend-mode: color-dodge;
@@ -255,3 +257,10 @@ a.archive-content-authors {
     font-size: 2.4vw;
   }
 }
+
+@media screen and (max-width: 970px) {
+  #guo-archive {
+    font-size: 4.5vw;
+  }
+}
+
