@@ -496,7 +496,7 @@ li.footer-tabs {
   transition: opacity 100ms;
   user-select: none;
   padding: 3px;
-  margin-bottom: 1vw;
+  margin-top: 1vw;
   border: 2px solid white;
 }
 
