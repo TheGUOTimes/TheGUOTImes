@@ -78,7 +78,7 @@ div.post-container {
 
 div.post {
   padding-top: 2vw;
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 
 h1.post-header {
@@ -94,11 +94,57 @@ p.post-content {
   line-height: 160%;
 }
 
+div.read-more {
+  height: 1.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(120, 120, 120);
+  border-bottom: 3px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  box-shadow: 2px -10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+button.read-more-button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
+div.read-less {
+  display: none;
+  height: 1.8vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(120, 120, 120);
+  border-bottom: 3px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  box-shadow: 2px -10px 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+button.read-less-button {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  margin: 2px;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  font-size: 15px;
+}
+
 div.post-footer {
   display: inline-flex;
   font-family: sans-serif;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 p.post-author {
@@ -134,6 +180,22 @@ a.post-share:active {
     background-attachment: fixed;
     background-size: 200%;
   }
+
+  div.read-more {
+    height: 2.4vw;
+  }
+
+  button.read-more-button {
+    font-size: 1.9vw;
+  }
+
+  div.read-less {
+    height: 2.4vw;
+  }
+
+  button.read-less-button {
+    font-size: 1.9vw;
+  }
 }
 
 @media screen and (max-width: 670px) {
@@ -149,8 +211,30 @@ a.post-share:active {
     font-size: 5.5vw;
   }
 
+  div.read-more {
+    height: 3.6vw;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  div.read-less {
+    height: 3.6vw;
+    border-bottom: 2px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
+
+  button.read-more-button {
+    font-size: 2vw;
+  }
+
+  button.read-less-button {
+    font-size: 2vw;
+  }
+
   p.post-content {
-    font-size: 3.6vw;
+    font-size: 3.2vw;
   }
 
   div.post-footer {
